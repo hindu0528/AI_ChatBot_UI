@@ -1,0 +1,136 @@
+.sidebar {
+  background-color: #202123;
+  width: 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.historyContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.heading {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.creditsContainer {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.creditIcon {
+  margin-right: 5px;
+}
+
+.conversationList {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.conversationButton {
+  width: 94%;
+  padding: 8px;
+  margin-bottom: 2px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: #1d1f21;
+  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.conversationTitle {
+  font-weight: bold;
+}
+
+.conversationTimestamp {
+  font-size: 10px;
+  margin-top: 4px;
+  color: #9b9b9b;
+}
+
+.userInfoContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: sticky;
+  bottom: 0;
+  background-color: #202123;
+  padding-top: 20px;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 5%;
+  margin-right: 10px;
+}
+
+.userName {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.actionButtons {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.emailButton,
+.signOutButton,
+.addCreditsButton {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #343541;
+  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.signOutIcon {
+  margin-right: 5px;
+}
+
+.creditIcon {
+  margin-right: 5px;
+}

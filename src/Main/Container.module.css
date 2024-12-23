@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  flex:1;
+  height: 100vh;
+  position: relative;
+}
+
+.mainContainer {
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.mobileOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.toggleButton {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #202123;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+@media (min-width: 768px) {
+  .toggleButton {
+    display: none;
+  }
+
+  .mobileOverlay {
+    display: none;
+  }
+}

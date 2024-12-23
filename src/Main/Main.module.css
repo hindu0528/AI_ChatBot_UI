@@ -1,0 +1,293 @@
+.main {
+  background-color: #343541;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.chatContainer {
+  flex: 1;
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.message {
+  max-width: 60%;
+  margin: 10px 0;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
+}
+
+.userMessage {
+  background-color: #444654;
+  align-self: flex-end;
+}
+
+.assistantMessage {
+  background-color: #202123;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.assistantInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 5%;
+}
+
+.assistantName {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.messageContent {
+  white-space: pre-wrap;
+}
+
+.chatInputContainer {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+  background-color: #444654;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chatInput {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 25px;
+  background-color: #444654;
+  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.sendButton {
+  background-color: #26c485;
+  border: none;
+  border-radius: 50%;
+  padding: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.sendIcon {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.iconContainer {
+  position: relative;
+  margin-right: 10px;
+}
+
+.attachmentIcon {
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.dropdown {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  background-color: #444654;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  margin-bottom: 5px;
+}
+
+.dropdownOption {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.dropdownOption:hover {
+  background-color: #55585f;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+    padding: 10px;
+  }
+
+  .heading {
+    font-size: 16px;
+  }
+
+  .creditsContainer {
+    font-size: 14px;
+  }
+
+  .conversationButton {
+    font-size: 14px;
+  }
+
+  .userName {
+    font-size: 14px;
+  }
+
+  .emailButton,
+  .signOutButton,
+  .addCreditsButton {
+    font-size: 12px;
+  }
+
+  .chatContainer {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .message {
+    max-width: 80%;
+    font-size: 14px;
+  }
+
+  .chatInputContainer {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .chatInput {
+    font-size: 14px;
+  }
+
+  .sendButton {
+    padding: 10px;
+  }
+
+  .sendIcon {
+    font-size: 16px;
+  }
+
+  .attachmentIcon {
+    font-size: 16px;
+  }
+
+  .tooltip {
+    font-size: 10px;
+  }
+
+  .dropdown {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 150px;
+    padding: 5px;
+  }
+
+  .heading {
+    font-size: 14px;
+  }
+
+  .creditsContainer {
+    font-size: 12px;
+  }
+
+  .conversationButton {
+    font-size: 12px;
+  }
+
+  .userName {
+    font-size: 12px;
+  }
+
+  .emailButton,
+  .signOutButton,
+  .addCreditsButton {
+    font-size: 10px;
+  }
+
+  .chatContainer {
+    padding: 5px;
+  }
+
+  .message {
+    max-width: 90%;
+    font-size: 12px;
+  }
+
+  .chatInputContainer {
+    margin-bottom: 10px;
+  }
+
+  .chatInput {
+    font-size: 12px;
+  }
+
+  .sendButton {
+    padding: 8px;
+  }
+
+  .sendIcon {
+    font-size: 14px;
+  }
+
+  .attachmentIcon {
+    font-size: 14px;
+  }
+
+  .tooltip {
+    font-size: 8px;
+  }
+
+  .dropdown {
+    font-size: 10px;
+  }
+}
